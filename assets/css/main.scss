@@ -1,0 +1,101 @@
+$black: #222222;
+$blue: #0A4486;
+$blue-light: #00B3CD;
+$orange: #FF662D;
+$white: #ffffff;
+
+@font-face {
+    font-family: Redonta;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Redonda-Bold.otf');
+}
+
+@font-face {
+    font-family: Redonta;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/Redonda-ExtraBold.otf');
+}
+
+.container{
+    max-width: 960px;
+}
+
+h1, h2, h3{
+    font-family: 'Redonta';
+    font-weight: 900;
+}
+
+p, li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+.bg-orange{
+    background: $orange;
+}
+
+.text-orange{
+    color: $orange;
+}
+
+.text-blue{
+    color: $blue-light;
+}
+
+header{
+    background: $black;
+    padding: 60px 0;
+    h1{
+        color: #fff;
+        margin: 0;
+    }
+    img{
+        margin-top: 20px;
+        max-width: 600px;
+    }
+}
+
+.content{
+    img{
+        margin-bottom: 20px;
+    }
+}
+
+.call-to-action{
+    background: $black;
+    padding: 60px 0;
+    h3{
+        color: #fff;
+        margin: 0;
+    }
+    .botao {
+        font-family: "Redonta";
+        font-weight: 600;
+        background: $orange;
+        color: $white;
+        border: 0;
+        margin-top: 20px;
+        white-space: normal;
+        font-size: 21px;
+        border-radius: 50px;
+        padding: 15px 30px;
+        line-height: 25px;
+        box-shadow: 0 0 25px rgb(255 102 45 / 80%);
+    }
+}
+
+@media screen and (max-width: 1023px){
+    h1,h2,h3{
+        font-size: 21px;
+        line-height: 25px;
+    }
+    header{
+        padding: 20px 0;
+    }
+}
