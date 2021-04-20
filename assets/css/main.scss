@@ -48,6 +48,25 @@ p{
     color: $blue-light;
 }
 
+.highlight{
+    background-size: 200% auto; 
+    background-image: linear-gradient(to right,#fff 50%, $blue-light 50%);
+    background-position: 0% 0;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.highlight.active{
+   animation-name: highlight;
+}
+
+@keyframes highlight {
+    from {background-position: 0% 0;}
+    to {background-position: -100% 0;}
+}
+
 header{
     background: $black;
     padding: 60px 0;

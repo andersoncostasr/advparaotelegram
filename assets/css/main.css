@@ -40,6 +40,28 @@ p {
   color: #00B3CD;
 }
 
+.highlight {
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #fff 50%, #00B3CD 50%);
+  background-position: 0% 0;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.highlight.active {
+  animation-name: highlight;
+}
+
+@keyframes highlight {
+  from {
+    background-position: 0% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
 header {
   background: #222222;
   padding: 60px 0;
